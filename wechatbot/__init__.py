@@ -1,0 +1,1 @@
+from .wechatbot import Wechat_bot
