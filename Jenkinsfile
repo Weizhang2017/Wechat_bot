@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('install dependency') {
             steps {
-                sh 'pip install pytest'
+                sh 'virtualenv venv && . venv/bin/activate && pip install pytest'
             }
 
         }
