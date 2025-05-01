@@ -3,6 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'pip install pytest'
+            }
+            steps {
                 sh 'pytest test_app.py'
             }
         }
