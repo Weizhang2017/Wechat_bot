@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                python app.py
+                sh 'python app.py'
             }
         }
     }
